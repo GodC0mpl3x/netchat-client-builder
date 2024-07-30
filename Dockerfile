@@ -14,16 +14,7 @@ ONBUILD COPY /netchat-client/ /netchat-client/
 ONBUILD RUN cd netchat-client && make
 
 FROM build_${LOCAL} AS final
-RUN touch test.txt
-RUN ls -an && echo "hello"
-#COPY netchat-client/ /netchat-client/
-
 
 #output to file
 FROM scratch AS artifact
 COPY --from=final /netchat-client/ /netchat-client/
-
-#ADD test /
-#CMD ["/test"]
-
-#COPY --from=build /var/task/lambdatest.zip /lambdatest.zip
