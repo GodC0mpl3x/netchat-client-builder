@@ -1,6 +1,6 @@
 # netchat-client builder
 
-A docker implementation to build netchat-client 
+A docker implementation to build [netchat-client](https://github.com/tkbstudios/netchat-client) 
 
 Just run build.sh
 
