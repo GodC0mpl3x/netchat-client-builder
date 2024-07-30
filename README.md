@@ -2,7 +2,9 @@
 
 A docker implementation to build [netchat-client](https://github.com/tkbstudios/netchat-client) 
 
-Just run build.sh
+Usage: 
+- Linux: run build.sh
+- Windows: run build.bat
 
 If you have the "netchat-client" folder in the same directory as build.sh and the Dockerfile then it'll use that source to build the files otherwise it'll pull from github the most recent version and build using that. 
 
