@@ -4,7 +4,7 @@ ARG LOCAL
 FROM python:3 AS build_remote
 ENV PATH="/CEdev/bin:$PATH"
 RUN wget https://github.com/CE-Programming/toolchain/releases/latest/download/CEdev-Linux.tar.gz && tar -xvf CEdev-Linux.tar.gz && rm CEdev-Linux.tar.gz 
-ONBUILD RUN git clone https://github.com/GodC0mpl3x/netchat-client && cd netchat-client/ && rm -rf app_tools && git submodule init && git submodule update --recursive && make
+ONBUILD RUN git clone https://github.com/tkbstudios/netchat-client && cd netchat-client/ && rm -rf app_tools && git submodule init && git submodule update --recursive && make
 
 #LocalBuild
 FROM python:3 AS build_local
