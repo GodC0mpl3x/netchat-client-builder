@@ -1,4 +1,4 @@
-ARG LOCAL
+ARG LOCAL="local"
 
 #RemoteBuild
 FROM python:3 AS build_remote
